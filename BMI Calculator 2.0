@@ -1,0 +1,26 @@
+
+height = float(input("enter your height in m: "))
+weight = float(input("enter your weight in kg: "))
+
+#This is the BMI calculator
+yourHeight = float(height)
+heightpow = 2
+BMI_height = (pow(yourHeight,heightpow))
+youBMI = round(float(weight) / BMI_height)
+
+#If Else to determine underweight, normal, chunky
+if youBMI < 18.5:
+    print(f"Your BMI is {youBMI}, you are underweight.")
+
+elif youBMI > 18.5 and youBMI < 25:
+    print(f"Your BMI is {youBMI}, you have a normal weight.")
+
+elif youBMI > 25 and youBMI < 30:
+    print(f"Your BMI is {youBMI}, you are slightly overweight.")
+
+elif youBMI > 30 and youBMI < 35:
+    print(f"Your BMI is {youBMI}, you are obese.")
+
+elif youBMI > 35:
+    print(f"Your BMI is {youBMI}, you are clinically obese.")
+
