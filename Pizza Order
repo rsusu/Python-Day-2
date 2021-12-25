@@ -1,0 +1,67 @@
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+
+small_pizza = 15
+medium_pizza = 20
+large_pizza = 25
+
+pepperoni_small = 2
+pepperoni_medium = 3
+pepperoni_large = 3
+extra_cheese_topping = 1
+
+#Small Pizza
+if size == "S":
+    if add_pepperoni == "N" and extra_cheese == "N":
+        print(f"Your final bill is: ${small_pizza}.")
+    
+    elif add_pepperoni == "N" and extra_cheese == "Y":
+        small_cheese_piz = int(small_pizza) + int(extra_cheese_topping)
+        print(f"Your final bill is: ${small_cheese_piz}.")
+
+    elif add_pepperoni == "Y" and extra_cheese == "N":
+        small_pep_piz = int(small_pizza) + int(pepperoni_small)
+        print(f"Your final bill is: ${small_pep_piz}.")
+    
+    elif add_pepperoni == "Y" and extra_cheese == "Y":
+        small_all_piz = int(small_pizza) + int(extra_cheese_topping) + int(pepperoni_small) 
+        print(f"Your final bill is: ${small_all_piz}.")
+
+#Medium Pizza       
+if size == "M":
+    if add_pepperoni == "N" and extra_cheese == "N":
+        print(f"Your final bill is: ${medium_pizza}.")
+
+    elif add_pepperoni == "N" and extra_cheese == "Y":
+        medium_cheese_piz = int(medium_pizza) + int(extra_cheese_topping)
+        print(f"Your final bill is: ${medium_cheese_piz}.")
+
+    elif add_pepperoni == "Y" and extra_cheese == "N":
+        med_pep_piz = int(medium_pizza) + int(pepperoni_medium)
+        print(f"Your final bill is: ${med_pep_piz}.")
+
+    elif add_pepperoni == "Y" and extra_cheese == "Y":
+        med_all_piz = int(medium_pizza) + int(extra_cheese_topping) + int(pepperoni_medium) 
+        print(f"Your final bill is: ${med_all_piz}.")
+
+#Large Pizza
+if size == "L":
+    if add_pepperoni == "N" and extra_cheese == "N":
+        print(f"Your final bill is: ${large_pizza}.")
+
+    elif add_pepperoni == "N" and extra_cheese == "Y":
+        large_cheese_piz = int(large_pizza) + int(extra_cheese_topping)
+        print(f"Your final bill is: ${large_cheese_piz}.")
+
+    elif add_pepperoni == "Y" and extra_cheese == "N":
+        large_pep_piz = int(large_pizza) + int(pepperoni_large)
+        print(f"Your final bill is: ${med_pep_piz}.")
+
+    elif add_pepperoni == "Y" and extra_cheese == "Y":
+        large_all_piz = int(large_pizza) + int(extra_cheese_topping) + int(pepperoni_large) 
+        print(f"Your final bill is: ${large_all_piz}.")   
+
+
+
